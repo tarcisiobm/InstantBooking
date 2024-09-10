@@ -18,7 +18,7 @@
 - JavaScript 
 
 ## Acesse o projeto
-Você pode executar o InstantBooking diretamente pelos links do: [github](https://tarcisiobm.github.io/InstantBooking/) | [vercel](instant-booking.vercel.app) ou  fazer o clone deste repositório para para executar a aplicação localmente em sua máquina.
+Você pode executar o InstantBooking diretamente pelos links do: [github](https://tarcisiobm.github.io/InstantBooking/) | [vercel](https://instant-booking.vercel.app) ou  fazer o clone deste repositório para para executar a aplicação localmente em sua máquina.
 
 ## Como Rodar Localmente
 
