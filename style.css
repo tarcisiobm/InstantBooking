@@ -1,0 +1,1019 @@
+:root {
+  --text-color: white;
+  --text-black: black;
+
+  --blue-color: #0079c2;
+  --lightblue-color: rgba(128, 225, 255, 0.993);
+  --grey-color: #777777;
+  --dark-color: #171717;
+  --semitransparent-color: rgba(0, 0, 0, 0.3);
+  --yellow-color: rgb(255, 217, 0);
+
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+main,
+footer {
+  flex: 1;
+}
+
+/* --------------------------------------------------------------
+   HEADER GERAL
+   Estilos gerais do cabeçalho
+-------------------------------------------------------------- */
+
+header {
+  background-color: var(--lightblue-color);
+}
+
+.headerpages-conteudo {
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.headerpages-conteudo a {
+  text-decoration: none;
+}
+
+.header-superior {
+  padding: 7px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 6px;
+  background-color: rgba(153, 153, 153, 0.521);
+}
+
+.header-superior a {
+  text-decoration: none;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo h1 {
+  color: white;
+  font-weight: 400;
+}
+
+.header-logo img {
+  width: 40px;
+}
+
+.header-navegação ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+.header-navegação ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.header-operações button {
+  padding: 7px;
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  border-radius: 6px;
+  color: var(--text-color);
+  margin: 2px;
+  font-size: 12px;
+}
+
+.header-operações button:hover {
+  background-color: var(--text-color);
+  color: black;
+}
+
+/* --------------------------------------------------------------
+   FOOTER GERAL
+   Estilos gerais do rodapé
+-------------------------------------------------------------- */
+
+footer {
+  background-color: var(--dark-color);
+  padding: 50px 25px;
+}
+
+.footersuperior {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.footersuperior-logo h2 {
+  color: white;
+  font-weight: 400;
+}
+
+.footersuperior-linksociais ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+.footersuperior-linksociais ul li a img {
+  width: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footersuperior-linksociais ul li a img:hover {
+  transform: scale(1.2);
+}
+
+.footermeio {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+.footermeio-descriçãolinks {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex: 3;
+  color: var(--text-color);
+}
+
+.footermeio-descriçãolinks div {
+  flex: 1;
+  font-size: 13px;
+}
+
+.footermeio-descriçãolinks div p {
+  font-family: var(--font-secondary);
+}
+
+.footermeio-descriçãolinks div ul li {
+  list-style: none;
+}
+.footermeio-descriçãolinks div ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-family: var(--font-secondary);
+}
+
+.footermeio-descriçãolinks div ul li a:hover {
+  text-decoration: underline;
+}
+
+.footermeio-newsletter {
+  flex: 2;
+}
+
+.footermeio-newsletter p {
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.footermeio-newsletter input {
+  padding: 7px;
+  background-color: transparent;
+  border: 1px transparent;
+  border-bottom: 2px solid var(--blue-color);
+  color: var(--text-color);
+}
+
+.footermeio-newsletter button {
+  padding: 7px;
+  color: var(--text-color);
+  border: none;
+  border-radius: 6px;
+  background-color: var(--blue-color);
+}
+
+.footermeio-newsletter button:hover {
+  background-color: #0268a8;
+}
+
+.footerinferior {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 10px;
+  padding: 10px;
+  min-width: 1200px;
+  max-width: 1200px;
+  color: var(--text-color);
+  margin: 0 auto;
+}
+
+.footerinferior a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.footerinferior a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------
+   INDEX
+   Estilos da página inicial
+-------------------------------------------------------------- */
+
+/* -===HEADER===-*/
+
+.header-background {
+  padding: 20px 0;
+  background-image: url(assets/img/background.jpg);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.indexheader {
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.indexheader-texto {
+  color: var(--text-color);
+  max-width: 580px;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.indexheader-pesquisa {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  align-items: flex-start;
+}
+
+.indexheader-campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.lugar {
+  width: 400px;
+}
+
+.lugar label {
+  visibility: hidden;
+}
+
+.data {
+  width: auto;
+}
+
+.indexheader-label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.indexheader-input,
+.indexheader-localizacao {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.indexheader-campo input[type="date"] {
+  width: auto;
+}
+
+.indexheader-botão button {
+  padding: 12px 100px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--blue-color);
+  color: var(--text-color);
+}
+
+.indexheader-botão button:hover {
+  background-color: #0268a8;
+}
+
+/* -===MAIN===-*/
+
+.indexmain-destinos {
+  text-align: center;
+  padding: 70px 0;
+  color: var(--text-black);
+}
+
+.indexmain-destinos h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.indexmain-texto {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.indexmain-texto p {
+  color: var(--grey-color);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.indexmain-lugares {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.indexmain-lugares p {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.indexmain-lugares img {
+  width: 250px;
+  height: 185px;
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+/* --------------------------------------------------------------
+   LOGIN-CADASTRO | LOGIN | CADASTRO | CADASTRO-PROPRIEDADE
+   Estilos das páginas de login, cadastro e cadastro de propriedade
+-------------------------------------------------------------- */
+
+.paginas-main {
+  margin: 60px 30px;
+  gap: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.paginas-mainimagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.paginas-mainimagem img {
+  width: auto;
+  height: 300px;
+}
+
+.paginas-maininfo {
+  flex: 1;
+}
+
+.maininfo-logo {
+  color: var(--lightblue-color);
+  margin-bottom: 30px;
+}
+
+.maininfo-title {
+  margin-bottom: 15px;
+}
+
+.maininfo-input {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+  text-align: center;
+}
+
+.maininfo-input input {
+  padding: 7px;
+  background-color: transparent;
+  border: 1px solid var(--semitransparent-color);
+  border-radius: 6px;
+}
+.maininfo-input button {
+  width: 300px;
+  padding: 7px;
+  background-color: var(--lightblue-color);
+  border: none;
+  border-radius: 6px;
+}
+
+.maininfo-input button:hover {
+  background-color: rgba(116, 205, 232, 0.993);
+}
+
+.maininfo-input p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.maininfo-input label {
+  display: block;
+  font-size: 12px;
+  text-align: left;
+}
+
+.maininfo-input select {
+  width: 300px;
+  padding: 7px;
+  border: 1px solid var(--semitransparent-color);
+  border-radius: 6px;
+}
+
+.maininfo-input ul li {
+  list-style: none;
+  padding: 5px 10px;
+  display: inline-block;
+  margin: 0 5px;
+
+  border: 1px solid var(--text-black);
+  border-radius: 5px;
+}
+
+.maininfo-input ul a {
+  text-decoration: none;
+}
+
+.maininfo-input ul a img {
+  width: 15px;
+}
+
+.maininfo-termos {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 10px;
+}
+
+.maininfo-forgetpw p {
+  text-align: left;
+}
+
+.maininfo-checktermos {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 11px;
+}
+
+.maininfo-checktermos form label {
+  display: inline;
+}
+
+.maininfo-checktermos input {
+  width: 9px;
+  height: 9px;
+}
+
+#maininfo-descrição {
+  padding: 7px 7px 100px;
+}
+
+/* --------------------------------------------------------------
+   RESULTADOS-PESQUISA | PROPRIEDADE
+   Estilos para a página de resultados de pesquisa e detalhes de propriedade
+-------------------------------------------------------------- */
+
+.paginabusca-main {
+  margin: 60px auto;
+  max-width: 1000px;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.black label {
+  color: black;
+  visibility: visible;
+}
+
+.margem {
+  margin: 0;
+}
+
+.color-lightblue button {
+  background-color: var(--lightblue-color);
+}
+
+.color-lightblue button:hover {
+  background-color: rgba(116, 205, 232, 0.993);
+}
+
+.paginabusca-textoresultado {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.paginabusca-anuncios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.anuncios-propriedade {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  border: 1px solid var(--semitransparent-color);
+  border-radius: 6px;
+  margin: 10px;
+  padding: 20px;
+  width: auto;
+  height: auto;
+}
+
+.anuncios-propriedade img {
+  width: 248px;
+  height: auto; /*or 165px*/
+}
+
+.propriedades-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.anuncios-propriedade h2 {
+  font-size: 16px;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+}
+
+.anuncios-propriedade p {
+  font-size: 12px;
+}
+
+.propriedades-detalhes {
+  border-radius: 30px;
+  border: none;
+  width: 110px;
+  padding: 3px;
+  color: white;
+  cursor: pointer;
+  background-color: #1e1e1e;
+}
+
+/* --------------------------------------------------------------
+  PROPRIEDADE
+   Estilos para a página de detalhes de propriedade
+-------------------------------------------------------------- */
+
+.propriedade {
+  padding: 20px;
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+}
+
+.propriedade-texto {
+  display: flex;
+  flex-direction: column;
+}
+.avaliação {
+  display: flex;
+  align-items: center;
+}
+
+.nota {
+  font-size: 0;
+  display: inline-block;
+  position: relative;
+  line-height: 1;
+}
+
+.nota:before {
+  content: "grade grade grade grade grade";
+  font-family: "Material Symbols Outlined";
+  font-size: 12px;
+  color: #d3d3d3;
+  letter-spacing: -2px;
+}
+
+.nota:after {
+  content: "grade grade grade grade grade";
+  font-family: "Material Symbols Outlined";
+  font-size: 12px;
+  color: #f5c518;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--rating-width, 0%);
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: -2px;
+}
+
+.propriedade-titulo {
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.propriedade-descrição {
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.propriedade-popups {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  gap: 4px;
+}
+
+.detalhes {
+  background-color: transparent;
+  border: 1px solid var(--semitransparent-color);
+  border-radius: 6px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.disponibilidade {
+  background-color: #3ec3a47d;
+}
+
+.propriedade-endereço p {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+.propriedade-reserva button {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--blue-color);
+  color: var(--text-color);
+}
+
+.propriedade-reserva button:hover {
+  background-color: #0268a8;
+}
+
+.propriedade-imagensmapa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.propriedade-mapa {
+  flex: 1;
+}
+
+.propriedade-mapa img {
+  width: auto;
+  max-height: 300px;
+}
+
+.slider {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.propriedade-imagens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 455px;
+  height: 300px;
+}
+
+.propriedade-imagens img {
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.on {
+  opacity: 1;
+}
+
+#botao-antes,
+#botao-depois {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#botao-antes img,
+#botao-depois img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#botao-antes {
+  transform: rotate(180deg);
+}
+
+/* --------------------------------------------------------------
+   MEDIA QUERY | RESPONSIVO 📱
+   Ajustes do header geral para tamanhos de tela 900px
+-------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  /* --------------------------------------------------------------
+   HEADER GERAL
+   Estilos gerais do cabeçalho
+  -------------------------------------------------------------- */
+
+  .header-logo img {
+    width: 25px;
+  }
+
+  .header-navegação ul {
+    display: none;
+  }
+
+  .header-operações {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-operações button {
+    padding: 3px;
+    font-size: 10px;
+    width: 100%;
+  }
+}
+
+/* --------------------------------------------------------------
+   MEDIA QUERY | RESPONSIVO 📱
+   Ajustes da barra de pesquisa e conteudos para tamanhos de tela 1024px
+-------------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+  .propriedade-mapa img {
+    width: auto;
+    max-height: 198px;
+  }
+
+  .propriedade-imagens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 300px;
+    height: 198px;
+  }
+}
+
+/* --------------------------------------------------------------
+   MEDIA QUERY | RESPONSIVO 📱
+   Ajustes da barra de pesquisa e conteudos para tamanhos de tela 780px
+-------------------------------------------------------------- */
+
+@media (max-width: 780px) {
+  /* --------------------------------------------------------------
+   INDEX
+  -------------------------------------------------------------- */
+
+  /* -===HEADER===-*/
+
+  .indexheader-texto {
+    max-width: none;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .indexheader-pesquisa {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .lugar {
+    width: 350px;
+  }
+
+  .data {
+    width: 350px;
+  }
+
+  .indexheader-botão {
+    text-align: center;
+  }
+
+  /* -===MAIN===-*/
+  .indexmain-lugares {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* --------------------------------------------------------------
+   LOGIN-CADASTRO | LOGIN | CADASTRO | CADASTRO-PROPRIEDADE
+   Estilos das páginas de login, cadastro e cadastro de propriedade
+-------------------------------------------------------------- */
+
+  /* -===MAIN===-*/
+
+  .paginas-main {
+    margin: 20px auto;
+    flex-direction: column-reverse;
+  }
+  .paginas-mainimagem img {
+    width: auto;
+    height: 200px;
+  }
+
+  .maininfo-logo {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .maininfo-title {
+    margin-bottom: 7px;
+    font-size: 12px;
+  }
+
+  /* --------------------------------------------------------------
+   RESULTADOS-PESQUISA | PROPRIEDADE
+   Estilos para a página de resultados de pesquisa e detalhes de propriedade
+  -------------------------------------------------------------- */
+
+  /* -===MAIN===-*/
+
+  .paginabusca-main {
+    margin: 60px auto;
+    max-width: 1200px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paginabusca-textoresultado {
+    text-align: center;
+  }
+
+  .paginabusca-anuncios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .anuncios-propriedade {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    border: 1px solid var(--semitransparent-color);
+    border-radius: 6px;
+    margin: 10px;
+    padding: 20px;
+    width: 80vw;
+    height: auto;
+  }
+
+  .propriedades-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .anuncios-propriedade img {
+    width: 248px;
+    height: 165px;
+  }
+  .anuncios-propriedade h2 {
+    font-size: 16px;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+  }
+
+  .anuncios-propriedade p {
+    font-size: 12px;
+  }
+
+  /*=========================  */
+
+  .propriedade-popups ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 4px 0 0;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 6px;
+  }
+
+  .propriedade-adress p {
+    margin: 10px 0;
+  }
+}
+
+/* --------------------------------------------------------------
+   MEDIA QUERY | RESPONSIVO 📱
+   Ajuste do footer para tamanhos de tela 500px
+-------------------------------------------------------------- */
+
+@media (max-width: 500px) {
+  .footersuperior {
+    margin-bottom: 20px;
+  }
+
+  .footersuperior-logo h2 {
+    font-size: 15px;
+  }
+
+  .footersuperior-linksociais ul li a img {
+    width: 15px;
+  }
+
+  .footermeio {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footermeio-descriçãolinks {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footermeio-descriçãolinks div p {
+    font-size: 12px;
+  }
+  .footermeio-descriçãolinks div ul li a {
+    font-size: 10px;
+  }
+
+  .footermeio-newsletter p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .footermeio-newsletter input {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+  .footermeio-newsletter button {
+    padding: 5px;
+  }
+
+  .footermeio-newsletter button:hover {
+    background-color: #0268a8;
+  }
+
+  .footerinferior {
+    min-width: 0;
+  }
+
+  .establishmentdetails-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .propriedade-descrição {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+
+  .propriedade-imagensmapa {
+    flex-direction: column;
+  }
+}

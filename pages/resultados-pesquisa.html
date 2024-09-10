@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resultado de Busca</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="headerpages-conteudo">
+        <a href="../index.html">
+          <section class="header-logo">
+            <img src="../assets/img/logo.png" alt="Logo" />
+            <h1>InstantBooking</h1>
+          </section>
+        </a>
+
+        <nav class="header-navegação">
+          <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="#">SOBRE</a></li>
+            <li><a href="#">DESTINOS</a></li>
+            <li><a href="#">PÁGINAS</a></li>
+            <li><a href="#">CONTATO</a></li>
+          </ul>
+        </nav>
+
+        <section class="header-operações">
+          <a href="cadastro-propriedade.html"
+            ><button>Cadastrar Imóvel</button></a
+          >
+          <a href="cadastro.html"><button>Cadastre-se</button></a>
+          <a href="login-cadastro.html"><button>Entrar</button></a>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <div class="paginabusca-main">
+        <section class="indexheader-pesquisa">
+          <div class="indexheader-campo lugar black">
+            <label class="indexheader-label" for="localizacao">Destino:</label>
+            <input
+              type="text"
+              id="localizacao"
+              class="indexheader-localizacao"
+              placeholder="Para onde voce deseja ir?"
+            />
+          </div>
+
+          <div class="indexheader-campo data black">
+            <label class="indexheader-label" for="checkin">Check in:</label>
+            <input type="date" id="checkin" class="indexheader-input" />
+          </div>
+
+          <div class="indexheader-campo data black">
+            <label class="indexheader-label black" for="checkout"
+              >Check out:</label
+            >
+            <input type="date" id="checkout" class="indexheader-input" />
+          </div>
+        </section>
+
+        <div class="indexheader-botão margem color-lightblue">
+          <a href="resultados-pesquisa.html"><button>Buscar</button></a>
+        </div>
+
+        <div class="paginabusca-textoresultado">
+          <p>Resultados para: <span>Rio de Janeiro</span></p>
+        </div>
+
+        <div class="paginabusca-anuncios">
+          <section class="anuncios-propriedade">
+            <a href="propriedade.html">
+              <div>
+                <img
+                  src="../assets/img/atlantico1.jpg"
+                  alt="Belo Horizonte Hotel"
+                />
+              </div>
+            </a>
+            <div class="propriedades-texto">
+              <h2>Hotel Atlantico Prime</h2>
+              <div class="avaliação">
+                <div class="nota" valor="10.0"></div>
+              </div>
+              <p>
+                O Hotel Atlantico Prime está situado no centro do Rio de Janeiro
+                e oferece acomodação com restaurante, estacionamento privativo,
+                academia e um bar.
+              </p>
+              <a href="propriedade.html">
+                <button class="propriedades-detalhes">Ver Detalhes</button>
+              </a>
+            </div>
+          </section>
+
+          <section class="anuncios-propriedade">
+            <a href="propriedade.html">
+              <div>
+                <img
+                  src="../assets/img/propriedade1.jpg"
+                  alt="Belo Horizonte Hotel"
+                />
+              </div>
+            </a>
+            <div class="propriedades-texto">
+              <h2>Belíssimo Apt no Leme</h2>
+              <div class="avaliação">
+                <div class="nota" valor="10.0"></div>
+              </div>
+              <p>
+                Belíssimo Apt no Leme localiza-se na área de Leme, no Rio de
+                Janeiro, a 6 minutos a pé de Praia de Copacabana, 4,9 km de
+                Montanha Pão de Açúcar e 5,7 km de Lagoa Rodrigo de Freitas.
+              </p>
+              <a href="propriedade.html">
+                <button class="propriedades-detalhes">Ver Detalhes</button>
+              </a>
+            </div>
+          </section>
+
+          <section class="anuncios-propriedade">
+            <a href="propriedade.html">
+              <div>
+                <img
+                  src="../assets/img/propriedade2.jpg"
+                  alt="Belo Horizonte Hotel"
+                />
+              </div>
+            </a>
+            <div class="propriedades-texto">
+              <h2>Studio em Ipanema - Posto 10</h2>
+              <div class="avaliação">
+                <div class="nota" valor="10.0"></div>
+              </div>
+              <p>
+                Studio em Ipanema - Posto 10 localiza-se na área de Ipanema, no
+                Rio de Janeiro, a 7 minutos a pé de Praia do Leblon, 2 km de
+                Praia do Arpoador e 3,5 km de Lagoa Rodrigo de Freitas.
+              </p>
+              <a href="propriedade.html">
+                <button class="propriedades-detalhes">Ver Detalhes</button>
+              </a>
+            </div>
+          </section>
+
+          <section class="anuncios-propriedade">
+            <a href="propriedade.html">
+              <div>
+                <img
+                  src="../assets/img/propriedade3.jpg"
+                  alt="Belo Horizonte Hotel"
+                />
+              </div>
+            </a>
+            <div class="propriedades-texto">
+              <h2>Hotel Atlântico Business Centro</h2>
+              <div class="avaliação">
+                <div class="nota" valor="10.0"></div>
+              </div>
+              <p>
+                O Hotel Atlântico Business está situado no centro do Rio de
+                Janeiro, a 200 metros do imponente Teatro Municipal.
+              </p>
+              <a href="propriedade.html">
+                <button class="propriedades-detalhes">Ver Detalhes</button>
+              </a>
+            </div>
+          </section>
+          <section class="anuncios-propriedade">
+            <a href="propriedade.html">
+              <div>
+                <img
+                  src="../assets/img/propriedade4.jpg"
+                  alt="Belo Horizonte Hotel"
+                />
+              </div>
+            </a>
+            <div class="propriedades-texto">
+              <h2>Hotel Atlântico Tower</h2>
+              <div class="avaliação">
+                <div class="nota" valor="10.0"></div>
+              </div>
+              <p>
+                O Hotel Atlântico Tower - SOFT OPENING está localizado próximo à
+                histórica Praça Tiradentes. A propriedade tem piscina ao ar
+                livre e bar no terraço com vista da cidade..
+              </p>
+              <a href="propriedade.html">
+                <button class="propriedades-detalhes">Ver Detalhes</button>
+              </a>
+            </div>
+          </section>
+          <section class="anuncios-propriedade">
+            <a href="propriedade.html">
+              <div>
+                <img
+                  src="../assets/img/propriedade5.jpg"
+                  alt="Belo Horizonte Hotel"
+                />
+              </div>
+            </a>
+            <div class="propriedades-texto">
+              <h2>Hotel Atlântico Travel Copacabana</h2>
+              <div class="avaliação">
+                <div class="nota" valor="10.0"></div>
+              </div>
+              <p>
+                Atualmente em fase de pré-inauguração, o Hotel Atlântico Travel
+                fica no Rio de Janeiro, a 500 metros da Praia de Copacabana e
+                350 metros da Estação de Metrô Siqueira Campos.
+              </p>
+              <a href="propriedade.html">
+                <button class="propriedades-detalhes">Ver Detalhes</button>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <section class="footersuperior">
+        <div class="footersuperior-logo">
+          <h2>InstantBooking</h2>
+        </div>
+
+        <div class="footersuperior-linksociais">
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="../assets/img/facebook.png" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../assets/img/instagram.png" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../assets/img/twitter.png" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../assets/img/linkedin.png" alt="LinkedIn"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../assets/img/youtube.png" alt="YouTube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="footermeio">
+        <div class="footermeio-descriçãolinks">
+          <div>
+            <p>
+              Com o InstantBooking, reservar seus serviços favoritos nunca foi
+              tão fácil e rápido. Nossa plataforma foi criada para simplificar
+              sua vida, oferecendo um processo de reserva sem complicações,
+              diretamente ao seu alcance.
+            </p>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#">Central de ajuda</a></li>
+              <li><a href="#">Descubra como o site funciona</a></li>
+              <li><a href="#">Condições de uso</a></li>
+              <li><a href="#">Informações legais</a></li>
+              <li><a href="#">Preferências de cookies</a></li>
+              <li><a href="#">Aviso de Privacidade</a></li>
+              <li><a href="#">Informações sobre a DSA</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footermeio-newsletter">
+          <p>
+            Quer ideias exclusivas para a sua próxima estadia?<br />
+            Inscreva-se em nossa newsletter.
+          </p>
+          <input type="email" name="email" placeholder="Endereço de email" />
+          <a href="#"><button>Inscreva-se</button></a>
+        </div>
+      </section>
+
+      <section class="footerinferior">
+        <p>
+          Copyright © 2024 InstantBooking Inc. Todos direitos reservados. |
+          desenvolvido por <a href="https://github.com/tarcisiobm">Tarcisio</a>
+        </p>
+      </section>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

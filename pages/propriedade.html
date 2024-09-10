@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imóvel selecionado</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="headerpages-conteudo">
+        <a href="../index.html">
+          <section class="header-logo">
+            <img src="../assets/img/logo.png" alt="Logo" />
+            <h1>InstantBooking</h1>
+          </section>
+        </a>
+
+        <nav class="header-navegação">
+          <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="#">SOBRE</a></li>
+            <li><a href="#">DESTINOS</a></li>
+            <li><a href="#">PAGINAS</a></li>
+            <li><a href="#">CONTATO</a></li>
+          </ul>
+        </nav>
+
+        <section class="header-operações">
+          <a href="cadastro-propriedade.html"
+            ><button>Cadastrar Imovel</button></a
+          >
+          <a href="cadastro.html"><button>Cadastre-se</button></a>
+          <a href="login-cadastro.html"><button>Entrar</button></a>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <div class="paginabusca-main">
+        <section class="indexheader-pesquisa">
+          <div class="indexheader-campo lugar black">
+            <label class="indexheader-label" for="localizacao">Destino:</label>
+            <input
+              type="text"
+              id="localizacao"
+              class="indexheader-localizacao"
+              placeholder="Para onde voce deseja ir?"
+            />
+          </div>
+
+          <div class="indexheader-campo data black">
+            <label class="indexheader-label" for="checkin">Check in:</label>
+            <input type="date" id="checkin" class="indexheader-input" />
+          </div>
+
+          <div class="indexheader-campo data black">
+            <label class="indexheader-label black" for="checkout"
+              >Check out:</label
+            >
+            <input type="date" id="checkout" class="indexheader-input" />
+          </div>
+        </section>
+
+        <div class="indexheader-botão margem color-lightblue">
+          <a href="resultados-pesquisa.html"><button>Buscar</button></a>
+        </div>
+
+        <div class="propriedade">
+          <section class="propriedade-texto">
+            <h2 class="propriedade-titulo">Hotel Atlantico Prime</h2>
+            <div class="avaliação">
+              <div class="nota" valor="10.0"></div>
+            </div>
+
+            <p class="propriedade-descrição">
+              O Hotel Atlantico Prime está situado no centro do Rio de Janeiro e
+              oferece acomodação com restaurante, estacionamento privativo,
+              academia e um bar. Este hotel 4 estrelas oferece Wi-Fi gratuito e
+              serviço de concierge. O hotel também oferece recepção 24 horas,
+              serviço de quarto e serviço de câmbio. Os quartos têm decoração
+              contemporânea, ar-condicionado, TV a cabo, cofre e espelho para
+              maquiagem. Um café da manhã em estilo buffet e continental é
+              servido diariamente no hotel. Você contará com um menu variado no
+              restaurante e bebidas refrescantes no bar. O Hotel Atlantico Prime
+              possui um centro de convenções para até 150 pessoas, com 6 salas
+              diferentes que permitem configuração em vários formatos. O Hotel
+              Atlantico Prime fica a 800 metros da Escadaria Selarón e a 600
+              metros dos Arcos da Lapa. Além disso, a propriedade fica a 3 km do
+              Aquário AquaRio e da Baía de Guanabara, e o estádio do Maracanã
+              fica a 6,5 km de distância. O Aeroporto Santos Dumont está situado
+              a 2 km desta propriedade. A distância na descrição da acomodação é
+              calculada pelo © OpenStreetMap
+            </p>
+            <section class="propriedade-popups">
+              <div class="detalhes">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="0 -960 960 960"
+                  width="20px"
+                  fill="#000000"
+                >
+                  <path
+                    d="M96-240v-216q0-26 12.5-49t35.5-34v-85q0-40 28-68t68-28h180q17.16 0 32.08 5.5Q467-709 480-698q13-11 27.92-16.5Q522.84-720 540-720h180q40 0 68 28t28 68v85q23 11 35.5 34t12.5 49v216h-72v-72H168v72H96Zm420-312h228v-72q0-10.2-6.9-17.1-6.9-6.9-17.1-6.9H540q-10.2 0-17.1 6.9-6.9 6.9-6.9 17.1v72Zm-300 0h228v-72q0-10.2-6.9-17.1-6.9-6.9-17.1-6.9H240q-10.2 0-17.1 6.9-6.9 6.9-6.9 17.1v72Z"
+                  />
+                </svg>
+                <span>2 Quartos</span>
+              </div>
+              <div class="detalhes">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="0 -960 960 960"
+                  width="20px"
+                  fill="#000000"
+                >
+                  <path
+                    d="M287.75-588q-34.75 0-59.25-24.75t-24.5-59.5q0-34.75 24.75-59.25t59.5-24.5q34.75 0 59.25 24.75t24.5 59.5q0 34.75-24.75 59.25t-59.5 24.5ZM240-96q-20.4 0-34.2-13.8Q192-123.6 192-144h-24q-29.7 0-50.85-21.15Q96-186.3 96-216v-216h120v-24q0-35.47 25.5-59.73Q267-540 303-540q16 0 31 5.5t26 16.5l56 50q11 9 20.5 18t19.5 18h264v-320q0-17-11-28.5T681-792q-13 0-23 7.5T639-768l-30 30q5 19.04.5 37.52Q605-682 591-669L489-771q13-14 31-18.5t37 .5l42-41q15.8-16 36.04-25 20.25-9 42.96-9 48 0 81 34t33 82v316h72v216q0 29.7-21.15 50.85Q821.7-144 792-144h-24q0 20.4-13.8 34.2Q740.4-96 720-96H240Z"
+                  />
+                </svg>
+                <span>2 Banheiros</span>
+              </div>
+              <div class="detalhes disponibilidade">Disponível</div>
+            </section>
+
+            <div class="propriedade-endereço">
+              <p>
+                <span class="material-symbols-outlined" style="color: #0079c2">
+                  distance
+                </span>
+                Rua do Rezende, 87 , Centro, Rio de Janeiro, CEP 20231-091,
+                Brazil
+              </p>
+            </div>
+          </section>
+
+          <section class="propriedade-reserva">
+            <a href="reserva.html"><button>Reserve agora!</button></a>
+          </section>
+
+          <section class="propriedade-imagensmapa">
+            <div class="slider">
+              <button id="botao-antes">
+                <img src="../assets/img/seta.png" alt="" />
+              </button>
+              <div class="propriedade-imagens">
+                <img
+                  src="../assets/img/atlantico1.jpg"
+                  alt="Imagem 1"
+                  class="slide on"
+                />
+                <img
+                  src="../assets/img/atlantico2.jpg"
+                  alt="Imagem 2"
+                  class="slide"
+                />
+                <img
+                  src="../assets/img/atlantico3.jpg"
+                  alt="Imagem 3"
+                  class="slide"
+                />
+                <img
+                  src="../assets/img/atlantico4.jpg"
+                  alt="Imagem 4"
+                  class="slide"
+                />
+                <img
+                  src="../assets/img/atlantico5.jpg"
+                  alt="Imagem 5"
+                  class="slide"
+                />
+                <img
+                  src="../assets/img/atlantico6.jpg"
+                  alt="Imagem 6"
+                  class="slide"
+                />
+                <img
+                  src="../assets/img/atlantico7.jpg"
+                  alt="Imagem 7"
+                  class="slide"
+                />
+                <img
+                  src="../assets/img/atlantico8.jpg"
+                  alt="Imagem 8"
+                  class="slide"
+                />
+              </div>
+              <button id="botao-depois">
+                <img src="../assets/img/seta.png" alt="" />
+              </button>
+            </div>
+
+            <div class="propriedade-mapa">
+              <img src="../assets/img/mapas(desenvolvendo).jpg" alt="" />
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <section class="footersuperior">
+        <div class="footersuperior-logo">
+          <h2>InstantBooking</h2>
+        </div>
+
+        <div class="footersuperior-linksociais">
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="../assets/img/facebook.png" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../assets/img/instagram.png" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../assets/img/twitter.png" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../assets/img/linkedin.png" alt="LinkedIn"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../assets/img/youtube.png" alt="YouTube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="footermeio">
+        <div class="footermeio-descriçãolinks">
+          <div>
+            <p>
+              Com o InstantBooking, reservar seus serviços favoritos nunca foi
+              tão fácil e rápido. Nossa plataforma foi criada para simplificar
+              sua vida, oferecendo um processo de reserva sem complicações,
+              diretamente ao seu alcance.
+            </p>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#">Central de ajuda</a></li>
+              <li><a href="#">Descubra como o site funciona</a></li>
+              <li><a href="#">Condições de uso</a></li>
+              <li><a href="#">Informações legais</a></li>
+              <li><a href="#">Preferências de cookies</a></li>
+              <li><a href="#">Aviso de Privacidade</a></li>
+              <li><a href="#">Informações sobre a DSA</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footermeio-newsletter">
+          <p>
+            Quer ideias exclusivas para a sua próxima estadia?<br />
+            Inscreva-se em nossa newsletter.
+          </p>
+          <input type="email" name="email" placeholder="Endereço de email" />
+          <a href="#"><button>Inscreva-se</button></a>
+        </div>
+      </section>
+
+      <section class="footerinferior">
+        <p>
+          Copyright © 2024 InstantBooking Inc. Todos direitos reservados. |
+          Desenvolvido por <a href="https://github.com/tarcisiobm">Tarcisio</a>
+        </p>
+      </section>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

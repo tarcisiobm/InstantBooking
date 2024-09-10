@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastre um imovel</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="headerpages-conteudo">
+        <a href="../index.html">
+          <section class="header-logo">
+            <img src="../assets/img/logo.png" alt="" />
+            <h1>InstantBooking</h1>
+          </section>
+        </a>
+
+        <nav class="header-navegação">
+          <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="#">SOBRE</a></li>
+            <li><a href="#">DESTINOS</a></li>
+            <li><a href="#">PAGINAS</a></li>
+            <li><a href="#">CONTATO</a></li>
+          </ul>
+        </nav>
+
+        <section class="header-operações">
+          <a href="cadastro-propriedade.html"
+            ><button>Cadastrar Imovel</button></a
+          >
+          <a href="cadastro.html"><button>Cadastre-se</button></a>
+          <a href="login-cadastro.html"><button>Entrar</button></a>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <div class="paginas-main">
+        <section class="paginas-mainimagem">
+          <img src="../assets/img/imovel.png" alt="" />
+        </section>
+        <section class="paginas-maininfo">
+          <div class="maininfo-logo">
+            <h1>InstantBooking</h1>
+          </div>
+          <div class="maininfo-title">
+            <h2>Cadastre seu imóvel</h2>
+          </div>
+          <div class="maininfo-input">
+            <input type="text" placeholder="Digite o nome do imóvel" />
+            <input type="text" placeholder="Digite o tipo de imóvel" />
+            <input type="text" placeholder="Digite a quantidade de quartos" />
+            <input type="text" placeholder="Digite a quantidade de banheiros" />
+            <input
+              type="number"
+              placeholder="Digite o valor da diaria"
+              min="0"
+              step="1.0"
+            />
+
+            <input
+              type="text"
+              placeholder="Digite a descrição do imóvel"
+              id="maininfo-descrição"
+            />
+            <label for="endereco">Insira o endereço do imóvel:</label>
+            <input
+              type="text"
+              id="endereco"
+              name="endereco"
+              placeholder="Digite o estado do endereco"
+            />
+            <input type="text" placeholder="Digite a cidade" />
+            <input type="text" placeholder="Digite o bairro" />
+            <input type="text" placeholder="Digite a rua" />
+            <input type="text" placeholder="Digite o numero" />
+
+            <form>
+              <label for="disponibilidade"
+                >Selecione a disponibilidade do imovel:</label
+              >
+              <select id="disponibilidade" name="disponibilidade">
+                <option value="disp">Disponivel</option>
+                <option value="ocup">Ocupado</option>
+                <option value="notdisp">Não Disponível no momento</option>
+              </select>
+            </form>
+
+            <label for="imagem">Insira imagens do imóvel:</label>
+            <input
+              type="file"
+              id="imagem"
+              name="imagem"
+              accept="image/*"
+              multiple
+            />
+
+            <a href="../index.html"><button>Continuar</button></a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <section class="footersuperior">
+        <div class="footersuperior-logo">
+          <h2>InstantBooking</h2>
+        </div>
+
+        <div class="footersuperior-linksociais">
+          <ul>
+            <li>
+              <a href=""><img src="../assets/img/facebook.png" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../assets/img/instagram.png" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../assets/img/twitter.png" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../assets/img/linkedin.png" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../assets/img/youtube.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="footermeio">
+        <div class="footermeio-descriçãolinks">
+          <div>
+            <p>
+              Com o InstantBooking, reservar seus serviços favoritos nunca foi
+              tão fácil e rápido. Nossa plataforma foi criada para simplificar
+              sua vida, oferecendo um processo de reserva sem complicações,
+              diretamente ao seu alcance.
+            </p>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#">Central de ajuda</a></li>
+              <li><a href="#">Descubra como o site funciona</a></li>
+              <li><a href="#">Condições de uso</a></li>
+              <li><a href="#">Informações legais</a></li>
+              <li><a href="#">Preferências de cookies</a></li>
+              <li><a href="#">Aviso de Privacidade</a></li>
+              <li><a href="#">Informações sobre a DSA</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footermeio-newsletter">
+          <p>
+            Quer ideias exclusivas para a sua próxima estadia?<br />
+            Inscreva-se em nossa newsletter.
+          </p>
+          <input type="email" name="email" placeholder="Endereço de email" />
+          <a href="#"><button>Inscreva-se</button></a>
+        </div>
+      </section>
+
+      <section class="footerinferior">
+        <p>
+          Copyright © 2024 InstantBooking Inc. Todos direitos reservados. |
+          desenvolvido por <a href="https://github.com/tarcisiobm">Tarcisio</a>
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>
